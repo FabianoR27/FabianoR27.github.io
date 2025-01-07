@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* Fonte */
+* {
+    font-family: "Poppins", sans-serif;
+    /* border: dashed 1px wheat; */
+}
+
+/* tamanho da fonte do titulo do Hero*/
+.h-hero {
+    font-size: 3rem;
+}
+
+/* Tamanho dos banners da lista de animes */
+#animeList img {
+    max-height: 14rem;
+}
+
+/* Tamanho da logo */
+.logo {
+    width: 2.5rem;
+}
+
+/* Tamanho da assinatura */
+.signature {
+    max-width: 5rem;
+}
+
+/* Tamanho dos ícones das redes sociais*/
+.social-media {
+    width: 4rem;
+}
+
+/* tamanho dos players de música */
+#playlist iframe {
+    width: 100%;
+    height: 9.5rem;
+}
+
+/* Efeito de transição padrão */
+.transition-effect {
+    transition:
+        transform ease .3s,
+        color ease .3s,
+        filter ease .3s; /* aplica efeitos de transição */
+}
+
+/* Estilizações da navbar*/
+/* classe que oculta a navbar ao rolar a página (ativada por javascript)*/
+.hidden {
+    transform: translateY(-100%);
+    transition: transform ease .3s;
+}
+
+/* hover para os links da navbar */
+.nav-link:hover {
+    color: #d4bbfe;
+    filter: drop-shadow(0 .5rem 2rem #d4bbfe);
+    text-shadow: 0 .5rem 2rem #d4bbfe83;
+    transform: scale(1.08);
+}
+/* fim do hover para os links da navbar */
+/* fim das estilizações da navbar*/
+
+/* cores de background */
+.bg-blackblue {
+    background-color: #00040d;
+}
+.bg-darkblue {
+    background-color: #020e1e;
+}
+.bg-gradient-blue {
+    background-image: linear-gradient(to bottom, #00040d, #020e1e);
+}
+
+
+/* cores para texto*/
+.text-black {
+    color: #000000;
+}
+.text-lilac {
+    color: #d4bbfe;
+}
+.text-mint {
+    color: #75fa9f;
+}
+/* fim das cores para texto*/
+
+
+/* cores de botões de ação*/
+.btn-lilac {
+    background-color: #d4bbfe;
+}
+.btn-lilac:hover {
+    background-color: #d4bbfe;
+    box-shadow: 0 .5rem 2rem #d4bbfe83;
+    color: #000000;
+}
+.btn-mint {
+    background-color: #75fa9f;
+}
+.btn-mint:hover {
+    background-color: #75fa9f;
+    box-shadow: 0 .5rem 2rem #75fa9f83;
+    color: #000000;
+}
+/* fim das cores de background */
+
+
+/* cores nos ícones das redes sociais*/
+.bi-instagram {
+    color: #c13584;
+}
+.bi-github{
+    color: #ffffff;
+}
+.bi-whatsapp {
+    color: #25d366;
+}
+.bi-linkedin {
+    color: #0a66c2;
+}
+
+/* estilização de bordas*/
+.bordas-mint {
+    border: solid 2px #75fa9f;
+    box-shadow: 0 .5rem 2rem #75fa9f83;
+}
+.bordas-lilac {
+    border: solid 2px #d4bbfe;
+    box-shadow: 0 .5rem 2rem #d4bbfe83;
+}
+.border-top-mint {
+    border-top: solid 1px #75fa9f;
+}
+.border-bottom-mint {
+    border-bottom: solid 1px #75fa9f;
+}
+.border-top-lilac {
+    border-top: solid 1px #d4bbfe;
+}
+.border-bottom-lilac {
+    border-bottom: solid 1px #d4bbfe;
+}
+/* fim da estilização de bordas*/
+
+
+/* estilização do botão acordeão das séries*/
+.accordion-button {
+    color: #75fa9f;
+}
+.accordion-button:focus, .accordion-button:hover {
+    box-shadow: 0 .5rem 2rem #75fa9f83;
+    background-color: #75fa9f; /* Cor de fundo do botão em foco*/
+    color: #000000;
+}
+/* fim da estilização do botão acordeão */
+
+
+/* estilização de scrollbars */
+html ::-webkit-scrollbar {
+    width: .5rem;
+}
+html ::-webkit-scrollbar-thumb {
+    background: #75fa9f83;
+}
+html ::-webkit-scrollbar-thumb:hover {
+    background: #75fa9f;
+}
+html ::-webkit-scrollbar-track {
+    background: #4b425a83;
+}
+/* removendo a barra de rolagem horizontal da lista de animes*/
+.overflow-x-scroll::-webkit-scrollbar {
+    display: none;
+}
+/* fim da estilização de scrollbars */
+
+
+/* posicionando e estilizando os botões de rolagem da lista de animes*/
+.scroll-button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 2.5rem;
+    color: white;
+    height: 50%;
+    transition: ease .1s;
+    background-color: transparent; /* deixa a cor do container do botão transparente */
+}
+.scroll-button i {
+    border-radius: 100%; /*arredondamento da caixa para sombreamento*/
+    text-shadow: 0 0 1rem .5rem #00000030; /* sobra no botão para mais destaque*/
+}
+.scroll-button:hover {
+    font-size: 3rem;
+    background-color: #00000050; /* deixa a cor do container do botão quase transparente */
+    box-shadow: 0 0 3rem 3rem #00000050; /* sombra no container do botão para destacar */
+}
+.scroll-button.left {
+    left: .5rem;
+}
+.scroll-button.right {
+    right: .5rem;
+}
+/* fim do posicionamento de botões da lista de animes */
+
+
+/* Efeito de zoom ao passar o mouse sobre as imagens do portfólio */
+#portfolio img:hover {
+    transform: scale(1.03);
+}
+/* fim do efeito de zoom ao passar o mouse sobre as imagens do portfólio */
+
+
+/* aplicando o efeito de zoom e brilho nos banners dos animes ao passar o mouse e clicar*/
+/* brilho baixo nas imagens */
+#animeList img{
+    transition: filter ease .3s; /* aplica efeitos de transição*/
+    filter: brightness(0.6);
+}
+/*Efeito de zoom e brilho*/
+#animeList img:hover,
+#animeList a:focus img {
+    transform: scale(1.04);
+    filter: brightness(1.0);
+    border: solid .125rem #d4bbfe;
+    box-shadow: 0 .3rem 1rem #d4bbfe83;
+}
+/* fim da aplicação de zoom e brilho nos banners*/
+
+
+/* efeito visual (ou magia) para esconder e revelar os vídeos sobre as imagens grandes dos animes */
+.anime-video iframe{
+    transition: filter ease .3s .5s;
+    filter: opacity(0); /* para esconder o vídeo*/
+}
+.anime-video:hover iframe{
+    filter: opacity(1.0); /* para revelar o vídeo*/
+}
+/* fim do efeito visual para esconder e revelar os vídeos */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* tamanho da fonte do titulo do Hero aumentado a partir da small query*/
+    .h-hero {
+        font-size: 4rem;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* redes sociais */
+    .social-media {
+        width: 6.5rem;
+    }
+
+    /* Redimensionamento dos bannes da lista de animes no modo TABLET */
+    #animeList img {
+        max-height: 18rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /*Reajuste do tamanho da logo*/
+    .logo {
+        width: 3.5rem;
+    }
+
+    /* redes sociais*/
+    .social-media {
+        width: 8rem;
+    }
+    /* reajuste do tamanho da fonte e espaço entre linhas do Titulo do Hero*/
+    .h-hero {
+        font-size: 4.5rem;
+        line-height: 1.5;
+    }
+
+    /*Reajuste do tamanho dos banners da lista de animes no modo desktop */
+    #animeList img {
+        width: 100%;
+        max-height: 22.5rem;
+    }
+
+    /* reajuste do banner do Hero da página para o modo desktop (lg) */
+    .bg-hero {
+        background: linear-gradient( to right, #00040d, #020e1e, transparent), url("../images/fabiano01-bg-cut.jpg") repeat right center;
+        background-size: contain;
+    }
+    .bg-about {
+        background: linear-gradient( to left, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02-bg-cut.jpg") repeat left center;
+        background-size: contain;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    /* reajuste do banner do Hero da página para o modo desktop (xl) */
+    .bg-hero {
+        background: linear-gradient( to right, #00040d, #020e1e, transparent), url("../images/fabiano01.webp") repeat right center;
+        background-size: contain;
+    }
+    .bg-about {
+        background: linear-gradient( to left, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02.webp") repeat left center;
+        background-size: contain;
+    }
+}
+

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma página com uma apresentação profissional e pessoal sobre mim, além de uma amostra de meus projetos">
+    <meta name="keywords" content="Fabiano Ramos, desenvolvedor Front-End, portfólio, projetos, quem sou, animes, séries, músicas">
+    <meta name="author" content="Fabiano Ramos">
+    <meta name="robots" content="index, follow">
+    <title>Página do Fabiano</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logos/favicon.png">
+    <!--Css BootStrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Css geral-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-light bg-darkblue">
+    <!-- Header -->
+    <header class="py-3 sticky-top bg-blackblue user-select-none transition-effect" id="navbar">
+        <div class="container d-flex px-md-0 m-auto justify-content-between align-items-start align-items-lg-center">
+            <div class=" text-start d-flex align-items-center my-md-auto gap-3">
+                <a href="#"><img src="assets/images/logos/mylogowhite.png" alt="Fabiano Ramos Logo" class="logo"></a>
+
+                <div class="d-none d-lg-block">
+                    <span class="fs-3 text-light">Fabiano Ramos</span>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-md d-flex flex-column text-end justify-content-end align-items-end px-md-0 my-auto">
+                <button id="submenu-btn" class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list h1 text-light"></i>
+                </button>
+
+                <div class="d-flex flex-row justify-content-between fs-5">
+                    <ul class="collapse navbar-collapse gap-5 fs-4 list-unstyled my-auto" id="navbarSupportedContent">
+                        <li class="nav-item"><a href="#" class="nav-link transition-effect">Início</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link transition-effect">Portfólio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link transition-effect">Sobre mim</a></li>
+                        <li class="nav-item"><a href="#contacts" class="nav-link transition-effect">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="py-5 bg-blackblue bg-hero" id="hero">
+            <div class="container my-0 my-md-5 p-md-0">
+                <header class="d-flex flex-column align-items-center align-items-md-start gap-3">
+                    <h1 class="h-hero text-uppercase fw-bold text-lilac col-lg-9">Sejam Bem-vindos à página oficial de Fabiano Ramos.</h1>
+                    <p class="h1 lh-base fw-light text-light">Aqui você vai conhecer meus trabalhos, projetos e um pouco do que me inspira — tanto no lado profissional quanto pessoal. Explore a página e descubra mais sobre mim.</p>
+                </header>
+
+                <div class="d-lg-none text-center p-3 my-3">
+                    <img src="assets/images/fabiano01.webp" alt="Foto oficial de Fabiano Ramos" class="img-fluid bordas-lilac" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfólio -->
+        <section class="py-5 bg-blackblue" id="portfolio">
+            <div class="container my-0 my-md-5 p-md-0">
+                <header>
+                    <h2 class="h-hero text-center text-mint fw-bold text-uppercase">Portfólio</h2>
+                    <p class="h2 lh-base fw-light text-center text-light">Aqui você encontra os trabalhos e projetos que desenvolvi — e, claro, esta página também faz parte do meu portfólio. Afinal, cada detalhe aqui foi pensado para mostrar um pouco do que eu posso fazer.</p>
+                </header>
+
+                <div class="my-5">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between gap-5">
+                        <div class=" p-3 p-md-4 w-100 bordas-mint bg-blackblue">
+                            <a href="https://projeto-integrador-01.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/fateconHighlights.png" class="img-fluid bordas-mint transition-effect" alt="Página inicial do Primeiro projeto" loading="lazy"></a>
+                            <h3 class="h2 py-4 fw-semibold text-mint">Projeto integrador 1 - Fatecon Highlights</h3>
+                            <p class="lead">Este é o projeto integrador do meu primeiro semestre da faculdade. Em grupo, desenvolvemos uma página web em HTML5 semântico, com diferentes layouts para cada seção, abordando o evento geek da faculdade: a FATECon HQs. Esta versão foi atualizada após a entrega, refletindo minha visão pessoal do projeto.</p>
+                        </div>
+                        
+                        <div class="p-3 p-md-4 w-100 bordas-mint bg-blackblue">
+                            <a href="https://portal-fatecon.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/portalFatecon.png" class="img-fluid bordas-mint transition-effect" alt="Página inicial do Segundo projeto" loading="lazy"></a>
+                            <h3 class="h2 py-4 fw-semibold text-mint">Projeto integrador 2 - Portal Fatecon</h3>
+                            <p class="lead">Este é meu segundo projeto, desenvolvido em grupo e entregue no segundo semestre da faculdade. Criamos um portal de entretenimento geek inspirado no evento FATECon HQs, totalmente responsivo para qualquer tipo de tela. Esta versão, recriada em HTML e JavaScript, reflete minha visão pessoal do projeto. A versão original, desenvolvida em PHP, está disponível no meu GitHub — você pode conferir clicando <a href="https://github.com/FabianoR27/phpclass/tree/main/projetoIntegradorPHP" target="_blank" title="Códigos do projeto original aqui" class="text-mint fw-semibold">aqui</a>.</p>
+                        </div>
+                        
+                        <div class=" p-3 p-md-4 w-100 bordas-mint bg-blackblue">
+                            <a href="https://cafeteriacodefee.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/cafeteriaCodeffee.png" class="img-fluid bordas-mint transition-effect" alt="Página inicial da landing page" loading="lazy"></a>
+                            <h3 class="h2 py-4 fw-semibold text-mint">Landing Page - Cafeteria Codeffee</h3>
+                            <p class="lead">Essa é uma landing page de uma cafeteria fictícia, desenvolvida em HTML5 semântico. Criei este projeto para aprimorar minhas habilidades em desenvolvimento web e dar um toque criativo ao meu portfólio.</p>
+                        </div>
+                    </div>
+
+                    <p class="fw-light text-light pt-3">*Novos projetos serão adicionados conforme forem concluídos. Fique de olho para acompanhar as atualizações!</p>
+                </div>
+
+                <p class="h2 lh-base fw-light text-light pt-md-5">Quer ver o lado técnico dos meus projetos de perto? Explore meus repositórios no GitHub, onde compartilho códigos, materiais e outros trabalhos desenvolvidos ao longo dos meus estudos. <a href="https://github.com/FabianoR27/" target="_blank" title="clique aqui para ir ao meu perfil" class="fw-semibold text-mint">Clique aqui</a>.</p>
+            </div>
+        </section>
+
+        <!-- Sobre mim -->
+        <section class="py-5 bg-blackblue bg-about" id="about">
+            <div class="container my-0 my-md-5 p-md-0">
+                <div class="d-flex flex-md-row-reverse">
+                    <header class="d-flex flex-column align-items-center align-items-md-end gap-3 text-lg-end">
+                        <h2 class="h-hero text-uppercase fw-bold text-lilac col-lg-8">Conheça agora um pouco sobre mim.</h2>
+                        <p class="fs-4 lh-base fw-light text-light">Meu nome é Fabiano, tenho 29 anos e sou <span class="fw-semibold text-lilac">formado em Contabilidade e Administração</span>. Atualmente, estou <span class="fw-semibold text-lilac">ampliando meus conhecimentos na área de tecnologia</span>, <span class="fw-semibold text-lilac">cursando Sistemas para Internet na FATEC-SR</span>. Minha trajetória combina experiências em finanças e administração com o desejo de <span class="fw-semibold text-lilac">criar soluções inovadoras no ambiente digital</span>. Sou <span class="fw-semibold text-lilac">apaixonado por música, animes e séries</span>, e gosto de mergulhar em histórias envolventes. Entre meus favoritos estão o anime <span class="fw-semibold text-lilac">"One Piece"</span>, que me inspira com suas aventuras épicas, e a série <span class="fw-semibold text-lilac">"Supernatural"</span>, que admiro pela narrativa intensa. Nos momentos livres, gosto de <span class="fw-semibold text-lilac">explorar o desenvolvimento web e criar páginas em HTML</span> – algumas, até considero bem legais! Meu objetivo é <span class="fw-semibold text-lilac">me tornar um desenvolvedor Front-End</span>, <span class="fw-semibold text-lilac">unindo criatividade e técnica para entregar projetos incríveis</span>. Com uma <span class="fw-semibold text-lilac">visão multidisciplinar e paixão pelo aprendizado</span>, busco sempre me desafiar e crescer em cada área que escolho explorar.</p>
+                    </header>
+                </div>
+
+                <div class="d-lg-none text-center p-3 my-3">
+                    <img src="assets/images/fabiano02.webp" alt="Foto oficial de Fabiano Ramos" class="img-fluid bordas-lilac" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Músicas Favoritas -->
+        <section class="py-5 bg-blackblue" id="playlist">
+            <div class="container my-0 my-md-5 p-md-0">
+                <div class="d-flex flex-column flex-lg-row justify-content-between gap-2 gap-xl-4">
+                    <header class="d-flex flex-column align-items-center align-items-md-start gap-3 w-100">
+                        <h2 class="h-hero text-uppercase fw-bold text-mint">Minhas músicas favoritas</h2>
+                        <p class="fs-2 lh-base fw-light text-light">Como amante de música boa e com um gosto eclético que transita por diversos estilos, escolher minhas favoritas não é fácil. Ainda assim, preparei uma seleção especial: aqui estão 10 músicas que, entre centenas, representam o meu universo musical. Ouça agora mesmo e salve no seu <span class="text-mint fw-semibold">Spotify</span>!</p>
+                    </header>
+                    
+                    <div class="d-flex flex-column flex-md-row flex-lg-column flex-xl-row justify-content-center justify-lg-between gap-3 gap-xl-5 w-100">
+                        <div class="d-flex flex-column gap-3 gap-xl-5 user-select-none">
+                            <iframe src="https://open.spotify.com/embed/track/3H1LCvO3fVsK2HPguhbml0?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Forever -->
+                            <iframe src="https://open.spotify.com/embed/track/65r94rVdiMwqXyQFEr3tqT?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Resonance -->
+                            <iframe src="https://open.spotify.com/embed/track/1oVrNSqi3Xnh4IMEE8Uvgv?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Renegade -->
+                            <iframe src="https://open.spotify.com/embed/track/5JHNg1hxZFT7TDEphhM4wj?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Waiting For The End -->
+                            <iframe src="https://open.spotify.com/embed/track/1yxouixGWAcFOxmWM2iia7?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Coisas Que Vem Pra Ficar -->
+                        </div>
+
+                        <div class="d-flex flex-column gap-3 gap-xl-5 user-select-none">
+                            <iframe src="https://open.spotify.com/embed/track/3bMsT2EiXYKSUjc9uvIkI3?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Wake Me Up - Avicii By Avicii -->
+                            <iframe src="https://open.spotify.com/embed/track/6DtU5J0xK0Law03cXT6ar5?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Lucky -->
+                            <iframe src="https://open.spotify.com/embed/track/7pDQ4sjNxCUWEOQNNgIpCR?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Digno De Louvor -->
+                            <iframe src="https://open.spotify.com/embed/track/39BkJtg9J6gy6IybhX6ClV?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Fora Do Comum -->
+                            <iframe src="https://open.spotify.com/embed/track/7MPQNyAX02uIEQCRsC4sgc?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Banco -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animes Favoritos -->
+        <section class="py-5 bg-gradient-blue" id="animes">
+            <div class="container my-0 my-md-5 p-md-0">
+                <header class="d-flex flex-column align-items-center align-items-md-start gap-3">
+                    <h2 class="h-hero text-md-start text-lilac fw-bold text-uppercase">Meus animes favoritos</h2>
+                    <p class="fs-3 lh-base fw-light text-light">Esses são os animes que mais gosto, porque conseguiram me emocionar, arrancar boas risadas e ainda trazer lições valiosas.</p>
+                </header>
+
+                <!-- Anime List -->
+                <div class="carousel user-select-none" id="animeList">
+                    <button title="para a esquerda" class="scroll-button left d-lg-none" type="button" id="scrollLeft">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button title="para a direita" class="scroll-button right d-lg-none" type="button" id="scrollRight">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                
+                    <ul class="d-flex list-unstyled gap-2 overflow-x-scroll justify-content-around m-0 p-2" id="imageContainer">
+                        <!-- Anime 1 -->
+                        <li class="zoom-img mt-1">
+                            <a href="templates/anime-onePiece.html" class="load-content text-light text-decoration-none">
+                                <img title="Clique e veja logo abaixo" src="assets/images/animes/anime_one_piece_sm.webp" class="figure-img" alt="Banner do anime 'One Piece'">
+                                <p class="h4 text-start m-0 fw-semibold text-lilac" lang="en-us">One Piece</p>
+                            </a>
+                        </li>
+
+                        <!-- Anime 2 -->
+                        <li class="zoom-img mt-1">
+                            <a title="Clique e veja logo abaixo" href="templates/anime-naruto.html" class="load-content text-light text-decoration-none">
+                                <img src="assets/images/animes/anime_naruto_sm.webp" class="figure-img" alt="Banner do anime 'Naruto Shippuden'">
+                                <p class="h4 text-start m-0 fw-semibold text-lilac">Naruto Shippuden</p>
+                            </a>
+                        </li>
+
+                        <!-- Anime 3 -->
+                        <li class="zoom-img mt-1">
+                            <a title="Clique e veja logo abaixo" href="templates/anime-attackOnTitan.html" class="load-content text-light text-decoration-none">
+                                <img src="assets/images/animes/anime_attack_on_titan_sm.webp" class="figure-img" alt="Banner do anime 'Attack On Titan'">
+                                <p class="h4 text-start m-0 fw-semibold text-lilac" lang="en-us">Attack On Titan</p>
+                            </a>
+                        </li>
+
+                        <!-- Anime 4 -->
+                        <li class="zoom-img mt-1">
+                            <a title="Clique e veja logo abaixo" href="templates/anime-deathNote.html" class="load-content text-light text-decoration-none">
+                                <img src="assets/images/animes/anime_death_note_sm.webp" class="figure-img" alt="Banner do anime 'Death Note'">
+                                <p class="h4 text-start m-0 fw-semibold text-lilac" lang="en-us">Death Note</p>
+                            </a>
+                        </li>
+
+                        <!-- Anime 5 -->
+                        <li class="zoom-img mt-1">
+                            <a title="Clique e veja logo abaixo" href="templates/anime-chainsawMan.html" class="load-content text-light text-decoration-none">
+                                <img src="assets/images/animes/anime_chainsaw_man_sm.webp" class="figure-img" alt="Banner do anime 'Chainsaw Man'">
+                                <p class="h4 text-start m-0 fw-semibold text-lilac" lang="en-us">Chainsaw Man</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Anime Content -->
+                <div class="mt-5" id="content"></div>
+            </div>
+        </section>
+
+        <!-- Séries Favoritas -->
+        <section class="py-5 bg-darkblue" id="series">
+            <div class="container my-0 my-md-5 p-md-0">
+                <header class="d-flex flex-column align-items-center align-items-md-start gap-3">
+                    <h2 class="h-hero text-md-start text-mint fw-bold text-uppercase">Minhas Séries Favoritas</h2>
+                    <p class="fs-3 lh-base fw-light text-light">Essas séries estão entre as minhas favoritas, pois, assim como os animes, me marcaram, deixaram grandes lições e alegraram meus dias.</p>
+                </header>
+
+                <!-- Série 1 -->
+                <div class="accordion accordion-flush" id="accordionFlushSeries">
+                    <div class="accordion-item text-light bg-blackblue">
+                        <p class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                SUPERNATURAL
+                            </button>
+                        </p>
+
+                        <div id="flush-collapseOne" class="accordion-collapse collapse bordas-mint" data-bs-parent="#accordionFlushSeries">
+                            <div class="accordion-body p-2 py-md-0">
+                                <div class=" m-3 p-md-4 d-flex flex-column flex-sm-column flex-lg-row flex-md-row gap-3 gap-lg-5 justify-content-between">
+                                    <div class="order-1 order-lg-0 col-md-5 col-lg-auto mx-auto">
+                                        <img src="assets/images/series/supernatural.webp" alt="Banner da Série 'Supernatural'" class="img-fluid" loading="lazy">
+                                    </div>
+
+                                    <div class="order-lg-1">
+                                        <h3 class="fs-1 fw-bold text-mint">SUPERNATURAL</h3>
+                                        <div class="lead">
+                                            <p>Supernatural é uma série que acompanha os irmãos Sam e Dean Winchester em sua missão de caçar monstros, demônios e criaturas sobrenaturais enquanto lidam com tragédias pessoais e batalhas contra forças cósmicas. Ao longo de suas 15 temporadas, a série constrói um universo fascinante repleto de mistério, ação e relações humanas marcantes, com toques de humor e emoção.</p>
+
+                                            <p>Eu curto Supernatural porque, além das caçadas emocionantes e do folclore cheio de detalhes, o que realmente se destaca é a relação entre os irmãos. A série mistura drama, humor e ação de um jeito que te prende do início ao fim. Sam e Dean são o coração da história, e é fácil se conectar com as lutas e sacrifícios que eles enfrentam.</p>
+
+                                            <p>Se você ainda não conhece, vale a pena assistir Supernatural pois é uma história cheia de aventura, emoção e momentos que ficam na memória. É o tipo de série que te faz rir, chorar e torcer pelos personagens como se fossem parte da sua família.</p>
+                                        </div>
+
+                                        <div class="pt-2 text-center text-md-start">
+                                            <a href="https://www.primevideo.com/detail/0JA6NNUMSIDKVMSN45URIWQFAC" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Série 2 -->
+                    <div class="accordion-item text-light bg-blackblue">
+                        <p class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                THE BOYS
+                            </button>
+                        </p>
+
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse bordas-mint" data-bs-parent="#accordionFlushSeries">
+                            <div class="accordion-body p-2 py-md-0">
+                                <div class=" m-3 p-md-4 d-flex flex-column flex-sm-column flex-lg-row flex-md-row gap-3 gap-lg-5 justify-content-between">
+                                    <div class="order-1 order-lg-0 col-md-5 col-lg-auto mx-auto">
+                                        <img src="assets/images/series/the_boys.webp" alt="Banner da série 'The Boys'" class="img-fluid" loading="lazy">
+                                    </div>
+
+                                    <div class="order-lg-1">
+                                        <h3 class="fs-1 fw-bold text-mint">THE BOYS</h3>
+                                        <div class="lead">
+                                            <p>The Boys é uma série que vira o mundo dos super-heróis de cabeça para baixo. Aqui, os "heróis" nem sempre são tão heróicos assim, e um grupo de pessoas comuns decide enfrentá-los, expondo a corrupção e os abusos que eles escondem. Com muita ação, humor ácido e críticas afiadas à sociedade, a série é imprevisível e cheia de momentos chocantes.</p>
+
+                                            <p>Eu curto The Boys porque ela quebra todas as expectativas sobre histórias de heróis. É incrível ver como a série mistura humor, violência e dilemas morais de um jeito tão único. Os personagens têm profundidade e personalidade, e cada episódio te deixa querendo saber o que vem a seguir.</p>
+                                            
+                                            <p>Se você ainda não conhece, The Boys vale a pena porque não é só mais uma história de super-heróis. É diferente, ousada e cheia de momentos que te fazem rir, pensar e, às vezes, até ficar de boca aberta.</p>
+                                        </div>
+
+                                        <div class="pt-2 text-center text-md-start">
+                                            <a href="https://www.primevideo.com/detail/0KRGHGZCHKS920ZQGY5LBRF7MA" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Série 3 -->
+                    <div class="accordion-item text-light bg-blackblue">
+                        <p class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                COBRA KAI
+                            </button>
+                        </p>
+
+                        <div id="flush-collapseThree" class="accordion-collapse collapse bordas-mint" data-bs-parent="#accordionFlushSeries">
+                            <div class="accordion-body p-2 py-md-0">
+                                <div class=" m-3 p-md-4 d-flex flex-column flex-sm-column flex-lg-row flex-md-row gap-3 gap-lg-5 justify-content-between">
+                                    <div class="order-1 order-lg-0 col-md-5 col-lg-auto mx-auto">
+                                        <img src="assets/images/series/cobra_kai.webp" alt="Banner da série 'Kobra Kai'" class="img-fluid" loading="lazy">
+                                    </div>
+
+                                    <div class="order-lg-1">
+                                        <h3 class="fs-1 fw-bold text-mint">COBRA KAI</h3>
+                                        <div class="lead">
+                                            <p>Cobra Kai é a continuação que ninguém sabia que precisava, mas que todo mundo amou. A série revisita os personagens icônicos de Karatê Kid, décadas depois dos filmes, e mostra que rivalidades nunca morrem. Johnny Lawrence e Daniel LaRusso agora têm suas próprias academias de karatê e continuam se enfrentando enquanto tentam lidar com seus próprios problemas e ensinar uma nova geração.</p>
+
+                                            <p>Eu curto Cobra Kai porque ela mistura nostalgia e novidade de um jeito incrível. Ver os personagens clássicos de volta, com histórias mais maduras, mas sem perder o humor e as boas cenas de luta, é muito divertido. Além disso, os alunos trazem frescor à trama, e a dinâmica entre eles e seus mestres deixa tudo ainda mais interessante.</p>
+
+                                            <p>Cobra Kai vale é uma mistura legal de ação, comédia e emoção. É uma série que respeita o passado, mas sabe muito bem como criar algo novo e empolgante. Vale a pena dar uma olhada, caso não conheça ainda.</p>
+                                        </div>
+
+                                        <div class="pt-2 text-center text-md-start">
+                                            <a href="https://www.netflix.com/title/81002370" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Série 4 -->
+                    <div class="accordion-item text-light bg-blackblue">
+                        <p class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                THE WITCHER
+                            </button>
+                        </p>
+
+                        <div id="flush-collapseFour" class="accordion-collapse collapse bordas-mint" data-bs-parent="#accordionFlushSeries">
+                            <div class="accordion-body p-2 py-md-0">
+                                <div class=" m-3 p-md-4 d-flex flex-column flex-sm-column flex-lg-row flex-md-row gap-3 gap-lg-5 justify-content-between">
+                                    <div class="order-1 order-lg-0 col-md-5 col-lg-auto mx-auto">
+                                        <img src="assets/images/series/the_witcher.webp" alt="Banner da Série 'The Witcher'" class="img-fluid" loading="lazy">
+                                    </div>
+
+                                    <div class="order-lg-1">
+                                        <h3 class="fs-1 fw-bold text-mint">THE WITCHER</h3>
+                                        <div class="lead">
+                                            <p>The Witcher é uma série que nos leva para um mundo cheio de monstros, magia e escolhas difíceis. A história acompanha Geralt de Rivia, um bruxo caçador de monstros, enquanto ele tenta encontrar seu lugar em um mundo onde o bem e o mal nem sempre são tão claros. Com tramas envolventes e personagens marcantes, a série é cheia de ação, intrigas e momentos épicos.</p>
+
+                                            <p>Eu curto The Witcher porque é mais do que uma história de fantasia. A série tem um jeito único de misturar lutas incríveis, humor sarcástico e temas mais profundos, como destino e humanidade. Sem falar que Geralt é um protagonista que conquista com sua força e seu jeito "não tô nem aí". Ah, e a trilha sonora é viciante – impossível não cantarolar "Toss a Coin to Your Witcher (dê um trocado pro seu Bruxo...)".</p>
+                                                
+                                            <p>Vale a pena ver The Witcher, se você não conhece, porque entrega uma fantasia diferente, cheia de reviravoltas e personagens que grudam na memória. É o tipo de série que te leva para outro mundo e deixa você querendo mais a cada episódio.</p>
+
+                                        </div>
+
+                                        <div class="pt-2 text-center text-md-start">
+                                            <a href="https://www.netflix.com/title/80189685" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Série 5 -->
+                    <div class="accordion-item text-light bg-blackblue">
+                        <p class="accordion-header">
+                            <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                PEAKY BLINDERS
+                            </button>
+                        </p>
+
+                        <div id="flush-collapseFive" class="accordion-collapse collapse bordas-mint" data-bs-parent="#accordionFlushSeries">
+                            <div class="accordion-body p-2 py-md-0">
+                                <div class=" m-3 p-md-4 d-flex flex-column flex-sm-column flex-lg-row flex-md-row gap-3 gap-lg-5 justify-content-between">
+                                    <div class="order-1 order-lg-0 col-md-5 col-lg-auto mx-auto">
+                                        <img src="assets/images/series/peaky_blinders.webp" alt="Banner da Série 'Peaky Blinders'" class="img-fluid" loading="lazy">
+                                    </div>
+
+                                    <div class="order-lg-1">
+                                        <h3 class="fs-1 fw-bold text-mint">PEAKY BLINDERS</h3>
+                                        <div class="lead">
+                                            <p>Peaky Blinders é uma série ambientada na Inglaterra pós-Primeira Guerra Mundial, centrada na ascensão da família Shelby e seu império de apostas ilegais. Liderado pelo carismático e implacável Tommy Shelby, o grupo enfrenta rivais, conspirações e dilemas morais enquanto tenta expandir seu domínio. Com uma ambientação impecável e uma narrativa intensa, a série é tão elegante quanto sombria.</p>
+
+                                            <p>Eu gosto de Peaky Blinders porque ela é um retrato fascinante de ambição e poder. Tommy Shelby é um líder frio e calculista, capaz de tomar decisões impiedosas para proteger sua família e seus interesses. Sua frieza e estratégia contrastam com os conflitos internos que ele esconde, tornando-o um personagem complexo e cativante. Além disso, a série impressiona com uma fotografia belíssima, atuações marcantes e uma trilha sonora que mistura o clássico com o moderno, criando uma atmosfera única.</p>
+
+                                            <p>Se você ainda não assistiu, Peaky Blinders vale a pena porque é uma obra envolvente, repleta de intriga, drama e momentos memoráveis. É o tipo de série que combina estilo e substância, deixando você imerso no universo dos Shelby do começo ao fim.</p>
+                                        </div>
+
+                                        <div class="pt-2 text-center text-md-start">
+                                            <a href="https://www.netflix.com/title/80002479" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meus contatos -->
+        <section class="py-5 bg-darkblue" id="contacts">
+            <div class="container my-0 my-md-5 p-md-0">
+                <header>
+                    <h2 class="h-hero text-center text-lilac fw-bold text-uppercase">Contato</h2>
+                    <p class="h2 lh-base fw-light text-light py-md-5">Se chegou até aqui, parabéns! Sobreviveu ao meu monólogo e, quem sabe, até gostou. Minhas redes sociais estão logo abaixo, então aproveita: diga um "oi", deixe uma mensagem carinhosa (ou pelo menos educada), me chame para bater um papo, me contrate para aquele projeto incrível ou, melhor ainda, me convide para um bom churrasco com uns drinks caprichados — eu levo o gelo e as piadas ruins.</p>
+                </header>
+
+                <div class="my-5">
+                    <div class="list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-evenly gap-5">
+                        <a href="https://instagram.com/fabiano.r_/" target="_blank" title="Meu Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="social-media bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://github.com/FabianoR27/" target="_blank" title="Meu GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="social-media bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://wa.me/5511930865019/" target="_blank" title="Meu WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="social-media bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/fabianor27/" target="_blank" title="Meu LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="social-media bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center py-3 bg-darkblue border-top-lilac user-select-none">
+            <img src="assets/images/logos/mysignwhite.png" alt="Fabiano Ramos Signature" class="img-fluid mb-3 signature">
+            <p class="m-0 text-light fw-light">&copy; <span id="year"></span> Developed by <a href="https://instagram.com/fabiano.r_/" target="_blank" class="text-lilac">Fabiano Ramos.</a> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--Scripts BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Personal Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+<!-- esta assinatura é o selo anti-plágio de Fabiano Ramos.
+            ///////////////////
+                 //    //              //
+                 //    //            ////
+                 //////////////    //  //
+                 //    //   ///  ///   //
+                 //    // // ////  ////
+                 //    //    //    //
+-->
