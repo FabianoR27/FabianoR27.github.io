@@ -92,7 +92,7 @@
     font-weight: bold;
 }
 .btn-lilac:hover {
-    background-color: #d4bbfe;
+    background-color: #d4bbfeab;
     box-shadow: 0 .5rem 2rem #d4bbfe83;
     color: #000000;
 }
@@ -102,7 +102,7 @@
 
 }
 .btn-mint:hover {
-    background-color: #75fa9f;
+    background-color: #75fa9fab;
     box-shadow: 0 .5rem 2rem #75fa9f83;
     color: #000000;
 }
@@ -125,24 +125,24 @@
 
 /* estilização de bordas*/
 .bordas-mint {
-    border: solid 2px #75fa9f;
+    border: solid .125rem #75fa9f;
     box-shadow: 0 .5rem 2rem #75fa9f83;
 }
 .bordas-lilac {
-    border: solid 2px #d4bbfe;
+    border: solid .125rem #d4bbfe;
     box-shadow: 0 .5rem 2rem #d4bbfe83;
 }
 .border-top-mint {
-    border-top: solid 1px #75fa9f;
+    border-top: solid .1rem #75fa9f;
 }
 .border-bottom-mint {
-    border-bottom: solid 1px #75fa9f;
+    border-bottom: solid .1rem #75fa9f;
 }
 .border-top-lilac {
-    border-top: solid 1px #d4bbfe;
+    border-top: solid .1rem #d4bbfe;
 }
 .border-bottom-lilac {
-    border-bottom: solid 1px #d4bbfe;
+    border-bottom: solid .1rem #d4bbfe;
 }
 /* fim da estilização de bordas*/
 
