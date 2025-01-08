@@ -89,6 +89,7 @@
 /* cores de botões de ação*/
 .btn-lilac {
     background-color: #d4bbfe;
+    font-weight: bold;
 }
 .btn-lilac:hover {
     background-color: #d4bbfe;
@@ -97,6 +98,8 @@
 }
 .btn-mint {
     background-color: #75fa9f;
+    font-weight: bold;
+
 }
 .btn-mint:hover {
     background-color: #75fa9f;
@@ -192,7 +195,7 @@ html ::-webkit-scrollbar-track {
 }
 .scroll-button i {
     border-radius: 100%; /*arredondamento da caixa para sombreamento*/
-    text-shadow: 0 0 1rem .5rem #00000030; /* sobra no botão para mais destaque*/
+    text-shadow: 0 1rem .5rem #00000030; /* sobra no botão para mais destaque*/
 }
 .scroll-button:hover {
     font-size: 3rem;
