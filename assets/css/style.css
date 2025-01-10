@@ -139,7 +139,9 @@
     border-bottom: solid .1rem #75fa9f;
 }
 .border-top-lilac {
-    border-top: solid .1rem #d4bbfe;
+    border-top: solid .1rem;
+    border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), #d4bbfe, rgba(60, 74, 83, 0)) 1;
+
 }
 .border-bottom-lilac {
     border-bottom: solid .1rem #d4bbfe;
