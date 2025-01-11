@@ -10,11 +10,6 @@
     font-size: 3rem;
 }
 
-/* Tamanho dos banners da lista de animes */
-#animeList img {
-    max-height: 14rem;
-}
-
 /* Tamanho da logo */
 .logo {
     width: 2.5rem;
@@ -141,7 +136,6 @@
 .border-top-lilac {
     border-top: solid .1rem;
     border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), #d4bbfe, rgba(60, 74, 83, 0)) 1;
-
 }
 .border-bottom-lilac {
     border-bottom: solid .1rem #d4bbfe;
@@ -222,17 +216,18 @@ html ::-webkit-scrollbar-track {
 
 /* aplicando o efeito de zoom e brilho nos banners dos animes ao passar o mouse e clicar*/
 /* brilho baixo nas imagens */
-#animeList img{
-    transition: filter ease .3s; /* aplica efeitos de transição*/
+#animeList img {
+    max-height: 14rem; /* Tamanho dos banners da lista de animes */
+    transition: filter ease .4s; /* aplica efeitos de transição*/
     filter: brightness(0.6);
 }
 /*Efeito de zoom e brilho*/
-#animeList img:hover,
+#animeList a:hover img,
 #animeList a:focus img {
     transform: scale(1.04);
     filter: brightness(1.0);
-    border: solid .125rem #d4bbfe;
-    box-shadow: 0 .3rem 1rem #d4bbfe83;
+    border: solid .125rem;
+    border-image: linear-gradient(120deg, transparent, #d4bbfe, transparent) 1;
 }
 /* fim da aplicação de zoom e brilho nos banners*/
 
@@ -289,7 +284,6 @@ html ::-webkit-scrollbar-track {
 
     /*Reajuste do tamanho dos banners da lista de animes no modo desktop */
     #animeList img {
-        width: 100%;
         max-height: 22.5rem;
     }
 
@@ -316,4 +310,3 @@ html ::-webkit-scrollbar-track {
         background-size: contain;
     }
 }
-
