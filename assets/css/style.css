@@ -298,11 +298,11 @@ html ::-webkit-scrollbar-track {
 
     /* reajuste do banner do Hero da página para o modo desktop (lg) */
     .bg-hero {
-        background: linear-gradient(50deg, #00040d, #00040d, transparent), url("../images/fabiano01-bg-cut.jpg") repeat right center;
+        background: linear-gradient(50deg, #00040d, #00040d, transparent), url("../images/fabiano01-bg-cut.webp") repeat right center;
         background-size: contain;
     }
     .bg-about {
-        background: linear-gradient(280deg, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02-bg-cut.jpg") repeat left center;
+        background: linear-gradient(280deg, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02-bg-cut.webp") repeat left center;
         background-size: contain;
     }
 }
@@ -311,7 +311,7 @@ html ::-webkit-scrollbar-track {
 @media (min-width: 1200px) { 
     /* reajuste do banner do Hero da página para o modo desktop (xl) */
     .bg-hero {
-        background: linear-gradient( 70deg, #00040d, #00040d, transparent), url("../images/fabiano01.webp") repeat right center;
+        background: linear-gradient( 70deg, #00040d, #00040d, #020e1e, #020e1e80, transparent), url("../images/fabiano01.webp") repeat right center;
         background-size: contain;
     }
     .bg-about {
