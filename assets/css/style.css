@@ -128,17 +128,20 @@
     box-shadow: 0 .5rem 2rem #d4bbfe83;
 }
 .border-top-mint {
-    border-top: solid .1rem #75fa9f;
+    border-top: solid .1rem;
+    border-image: linear-gradient(to right, transparent, #75fa9f, #75fa9f, transparent) 1;
 }
 .border-bottom-mint {
-    border-bottom: solid .1rem #75fa9f;
+    border-bottom: solid .1rem;
+    border-image: linear-gradient(to right, transparent, #75fa9f, #75fa9f, transparent) 1;
 }
 .border-top-lilac {
     border-top: solid .1rem;
-    border-image: linear-gradient(120deg, rgba(60, 74, 83, 0), #d4bbfe, rgba(60, 74, 83, 0)) 1;
+    border-image: linear-gradient(to right, transparent, #d4bbfe, #d4bbfe, transparent) 1;
 }
 .border-bottom-lilac {
-    border-bottom: solid .1rem #d4bbfe;
+    border-bottom: solid .1rem;
+    border-image: linear-gradient(to right, transparent, #d4bbfe, #d4bbfe, transparent) 1;
 }
 /* fim da estilização de bordas*/
 
@@ -226,7 +229,7 @@ html ::-webkit-scrollbar-track {
 #animeList a:focus img {
     transform: scale(1.04);
     filter: brightness(1.0);
-    border: solid .125rem;
+    border: solid .2rem;
     border-image: linear-gradient(120deg, transparent, #d4bbfe, transparent) 1;
 }
 /* fim da aplicação de zoom e brilho nos banners*/
@@ -241,6 +244,12 @@ html ::-webkit-scrollbar-track {
     filter: opacity(1.0); /* para revelar o vídeo*/
 }
 /* fim do efeito visual para esconder e revelar os vídeos */
+
+/* hover nos botões de social media*/
+.social-media:hover {
+    transform: scale(1.05);
+    filter: brightness(1.5);
+}
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -289,11 +298,11 @@ html ::-webkit-scrollbar-track {
 
     /* reajuste do banner do Hero da página para o modo desktop (lg) */
     .bg-hero {
-        background: linear-gradient( to right, #00040d, #020e1e, transparent), url("../images/fabiano01-bg-cut.jpg") repeat right center;
+        background: linear-gradient(50deg, #00040d, #00040d, transparent), url("../images/fabiano01-bg-cut.jpg") repeat right center;
         background-size: contain;
     }
     .bg-about {
-        background: linear-gradient( to left, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02-bg-cut.jpg") repeat left center;
+        background: linear-gradient(280deg, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02-bg-cut.jpg") repeat left center;
         background-size: contain;
     }
 }
@@ -302,11 +311,11 @@ html ::-webkit-scrollbar-track {
 @media (min-width: 1200px) { 
     /* reajuste do banner do Hero da página para o modo desktop (xl) */
     .bg-hero {
-        background: linear-gradient( to right, #00040d, #020e1e, transparent), url("../images/fabiano01.webp") repeat right center;
+        background: linear-gradient( 70deg, #00040d, #00040d, transparent), url("../images/fabiano01.webp") repeat right center;
         background-size: contain;
     }
     .bg-about {
-        background: linear-gradient( to left, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02.webp") repeat left center;
+        background: linear-gradient(300deg, #00040d, #00040d, #00040d, #00040d69, transparent), url("../images/fabiano02.webp") repeat left center;
         background-size: contain;
     }
 }
