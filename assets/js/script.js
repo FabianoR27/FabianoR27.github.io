@@ -92,51 +92,51 @@ scrollRightBtn.addEventListener('click', function () {
 });
 
 
-//script para a navbar
-const navbar = document.getElementById("navbar");
-const submenuBtn = document.querySelector("#submenu-btn");
-const submenuParent = submenuBtn.parentElement;
+// //script para a navbar
+// const navbar = document.getElementById("navbar");
+// const submenuBtn = document.querySelector("#submenu-btn");
+// const submenuParent = submenuBtn.parentElement;
 
-let lastScrollPosition = 0;
-const scrollThreshold = 200;
-let submenuOpen = false; // Estado do submenu
+// let lastScrollPosition = 0;
+// const scrollThreshold = 200;
+// let submenuOpen = false; // Estado do submenu
 
-// Função para controlar a visibilidade da navbar
-const handleNavbarVisibility = () => {
-    if (submenuOpen) return; // Não aplica a lógica se o submenu estiver aberto
+// // Função para controlar a visibilidade da navbar
+// const handleNavbarVisibility = () => {
+//     if (submenuOpen) return; // Não aplica a lógica se o submenu estiver aberto
 
-    const currentScrollPosition = window.scrollY;
+//     const currentScrollPosition = window.scrollY;
 
-    if (currentScrollPosition > scrollThreshold) {
-        if (currentScrollPosition > lastScrollPosition) {
-            navbar.classList.add("hidden"); // Esconde a navbar
-        } else {
-            navbar.classList.remove("hidden"); // Mostra a navbar
-        }
-    } else {
-        navbar.classList.remove("hidden"); // Sempre visível antes do limite
-    }
+//     if (currentScrollPosition > scrollThreshold) {
+//         if (currentScrollPosition > lastScrollPosition) {
+//             navbar.classList.add("hidden"); // Esconde a navbar
+//         } else {
+//             navbar.classList.remove("hidden"); // Mostra a navbar
+//         }
+//     } else {
+//         navbar.classList.remove("hidden"); // Sempre visível antes do limite
+//     }
 
-    lastScrollPosition = currentScrollPosition;
-};
+//     lastScrollPosition = currentScrollPosition;
+// };
 
-// Abre/fecha o submenu
-submenuBtn.addEventListener("click", (e) => {
-    e.preventDefault(); // Evita comportamento padrão do botão
-    submenuOpen = !submenuOpen; // Alterna o estado
-    submenuParent.classList.toggle("submenu-active", submenuOpen); // Adiciona/Remove classe do submenu
-});
+// // Abre/fecha o submenu
+// submenuBtn.addEventListener("click", (e) => {
+//     e.preventDefault(); // Evita comportamento padrão do botão
+//     submenuOpen = !submenuOpen; // Alterna o estado
+//     submenuParent.classList.toggle("submenu-active", submenuOpen); // Adiciona/Remove classe do submenu
+// });
 
-// Evento de scroll
-window.addEventListener("scroll", handleNavbarVisibility);
+// // Evento de scroll
+// window.addEventListener("scroll", handleNavbarVisibility);
 
-// Fecha o submenu ao clicar fora
-document.addEventListener("click", (e) => {
-    if (!submenuParent.contains(e.target)) {
-        submenuOpen = false;
-        submenuParent.classList.remove("submenu-active");
-    }
-});
+// // Fecha o submenu ao clicar fora
+// document.addEventListener("click", (e) => {
+//     if (!submenuParent.contains(e.target)) {
+//         submenuOpen = false;
+//         submenuParent.classList.remove("submenu-active");
+//     }
+// });
 
 
 //Ano dinâmico

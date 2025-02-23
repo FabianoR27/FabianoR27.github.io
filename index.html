@@ -24,7 +24,7 @@
 <body class="text-light bg-blackblue">
     <!-- Header -->
     <header class="py-3 sticky-top bg-blackblue user-select-none transition-effect" id="navbar">
-        <div class="container d-flex px-md-0 m-auto justify-content-between align-items-start align-items-lg-center">
+        <div class="container d-flex p-md-0 m-auto justify-content-between align-items-start align-items-lg-center">
             <div class=" text-start d-flex align-items-center my-md-auto gap-3">
                 <a href="index.html"><img src="assets/images/logos/mylogowhite.png" alt="Fabiano Ramos Logo" class="logo"></a>
 
@@ -33,7 +33,7 @@
                 </div>
             </div>
 
-            <nav class="navbar navbar-expand-md d-flex flex-column text-end justify-content-end align-items-end px-md-0 my-auto">
+            <nav class="navbar navbar-expand-md d-flex flex-column text-end justify-content-end align-items-end p-md-0 my-auto">
                 <button id="submenu-btn" class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list h1 text-light"></i>
                 </button>
@@ -112,6 +112,34 @@
             </div>
         </section>
 
+        <section class="py-5 bg-blackblue" id="certificado">
+            <div class="container my-0 my-md-5 p-md-0">
+                <header>
+                    <h2 class="h-hero text-center text-mint fw-bold text-uppercase">Certificados</h2>
+                    <p class="h2 lh-base fw-light text-center text-light">Aqui vou exibir meus certificados.</p>
+                </header>
+
+                <div class="mt-5 d-flex flex-column flex-lg-row justify-content-between gap-5">
+                    <div class="w-100">
+                        <img src="assets/images/certificados/certificado-imersao-frontend-alura.png" alt="Certificado de participação emitido pela Alura para Fabiano Ramos Ferreira de Jesus, confirmando a conclusão da Imersão Front-End 2ª Edição com carga horária estimada de 5 horas. O certificado foi finalizado em 10 de fevereiro de 2025 e contém assinaturas de Guilherme Silveira (fundador) e Paulo Silveira (CEO). O design do certificado tem um fundo azul escuro com detalhes em azul claro, além do logotipo da Alura no canto inferior esquerdo." loading="lazy" class="img-fluid bordas-mint">
+                    </div>
+
+                    <div class="d-flex flex-column gap-3 w-100">
+                        <h3 class="h2 fw-semibold text-mint">Imersão Front-End 2ª Edição</h3>
+                        <p class="lead">Este certificado comprova minha participação na Imersão Front-End 2ª Edição, promovida pela Alura. Durante essa experiência, aprofundei meus conhecimentos em HTML, CSS e JavaScript, criando projetos práticos e explorando conceitos fundamentais para o desenvolvimento web moderno.</p>
+                        <h3 class="fw-semibold text-mint">Destaques:</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check2 text-mint"></i> Evento realizado pela Alura, uma das maiores plataformas de ensino em tecnologia do Brasil</li>
+                            <li><i class="bi bi-check2 text-mint"></i> Carga horária de 5 horas</li>
+                            <li><i class="bi bi-check2 text-mint"></i> Finalizado em 10 de fevereiro de 2025</li>
+                        </ul>
+
+                        <a href="https://drive.google.com/file/d/1-IdW14OTsgpMea5XF05kjQYG6DPeS7WS/view?usp=sharing" target="_blank" class="text-mint text-end"><small>Veja o certificado completo <i class="bi bi-box-arrow-up-right"></i></small></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Sobre mim -->
         <section class="py-5 bg-blackblue bg-about" id="about">
             <div class="container my-0 my-md-5 p-md-0">
@@ -173,10 +201,10 @@
 
                 <!-- Anime List -->
                 <div class="carousel user-select-none" id="animeList">
-                    <button title="para a esquerda" class="scroll-button left d-lg-none" type="button" id="scrollLeft">
+                    <button title="para a esquerda" class="scroll-button left d-lg-none" type="button" id="scrollLeft" aria-label=" Mova a lista para a esquerda">
                         <i class="bi bi-chevron-left"></i>
                     </button>
-                    <button title="para a direita" class="scroll-button right d-lg-none" type="button" id="scrollRight">
+                    <button title="para a direita" class="scroll-button right d-lg-none" type="button" id="scrollRight" aria-label=" Mova a lista para a direita">
                         <i class="bi bi-chevron-right"></i>
                     </button>
                 
@@ -263,7 +291,7 @@
                                         </div>
 
                                         <div class="pt-2 text-center text-md-start">
-                                            <a href="https://www.primevideo.com/detail/0JA6NNUMSIDKVMSN45URIWQFAC" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                            <a href="https://www.primevideo.com/detail/0JA6NNUMSIDKVMSN45URIWQFAC" target="_blank" class="btn btn-sm btn-mint"><i class="bi bi-box-arrow-up-right"></i> ASSISTA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +325,7 @@
                                         </div>
 
                                         <div class="pt-2 text-center text-md-start">
-                                            <a href="https://www.primevideo.com/detail/0KRGHGZCHKS920ZQGY5LBRF7MA" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                            <a href="https://www.primevideo.com/detail/0KRGHGZCHKS920ZQGY5LBRF7MA" target="_blank" class="btn btn-sm btn-mint"><i class="bi bi-box-arrow-up-right"></i> ASSISTA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -331,7 +359,7 @@
                                         </div>
 
                                         <div class="pt-2 text-center text-md-start">
-                                            <a href="https://www.netflix.com/title/81002370" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                            <a href="https://www.netflix.com/title/81002370" target="_blank" class="btn btn-sm btn-mint"><i class="bi bi-box-arrow-up-right"></i> ASSISTA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -366,7 +394,7 @@
                                         </div>
 
                                         <div class="pt-2 text-center text-md-start">
-                                            <a href="https://www.netflix.com/title/80189685" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                            <a href="https://www.netflix.com/title/80189685" target="_blank" class="btn btn-sm btn-mint"><i class="bi bi-box-arrow-up-right"></i> ASSISTA</a>
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +428,7 @@
                                         </div>
 
                                         <div class="pt-2 text-center text-md-start">
-                                            <a href="https://www.netflix.com/title/80002479" target="_blank" class="btn btn-sm btn-mint">ASSISTA <i class="bi bi-box-arrow-up-right"></i></a>
+                                            <a href="https://www.netflix.com/title/80002479" target="_blank" class="btn btn-sm btn-mint"><i class="bi bi-box-arrow-up-right"></i> ASSISTA</a>
                                         </div>
                                     </div>
                                 </div>

@@ -276,11 +276,6 @@ html ::-webkit-scrollbar-track {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    /*Reajuste do tamanho da logo*/
-    .logo {
-        width: 3.5rem;
-    }
-
     /* redes sociais*/
     .social-media {
         width: 8rem;
