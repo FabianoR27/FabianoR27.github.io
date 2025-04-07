@@ -227,7 +227,7 @@ html ::-webkit-scrollbar-track {
 /*Efeito de zoom e brilho*/
 #animeList a:hover img,
 #animeList a:focus img {
-    transform: scale(1.04);
+    /* transform: scale(1.04); */
     filter: brightness(1.0);
     border: solid .2rem;
     border-image: linear-gradient(120deg, transparent, #d4bbfe, transparent) 1;
@@ -265,7 +265,7 @@ html ::-webkit-scrollbar-track {
 @media (min-width: 768px) {
     /* redes sociais */
     .social-media {
-        width: 6.5rem;
+        width: 5rem;
     }
 
     /* Redimensionamento dos bannes da lista de animes no modo TABLET */
@@ -278,7 +278,7 @@ html ::-webkit-scrollbar-track {
 @media (min-width: 992px) {
     /* redes sociais*/
     .social-media {
-        width: 8rem;
+        width: 6rem;
     }
     /* reajuste do tamanho da fonte e espaço entre linhas do Titulo do Hero*/
     .h-hero {
