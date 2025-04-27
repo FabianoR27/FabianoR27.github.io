@@ -1,8 +1,9 @@
 @charset "UTF-8";
-/* Fonte */
+/* Global */
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif; /* fonte padrão do site */
     /* border: dashed 1px wheat; */
+    /* bordas auxiliares para facilitar o desenvolvimento */
 }
 
 /* tamanho da fonte do titulo do Hero*/
@@ -119,13 +120,23 @@
 }
 
 /* estilização de bordas*/
-.bordas-mint {
+.border-mint {
     border: solid .125rem #75fa9f;
     box-shadow: 0 .5rem 2rem #75fa9f83;
 }
-.bordas-lilac {
+.border-lilac {
     border: solid .125rem #d4bbfe;
     box-shadow: 0 .5rem 2rem #d4bbfe83;
+}
+
+/* bordas com gradiente*/
+.border-gradient-lilac{
+    border: solid .125rem;
+    border-image: linear-gradient(120deg, transparent, #d4bbfe, transparent) 1;
+}
+.border-gradient-mint {
+    border: solid .125rem;
+    border-image: linear-gradient(120deg, transparent, #75fa9f, transparent) 1;
 }
 .border-top-mint {
     border-top: solid .1rem;
