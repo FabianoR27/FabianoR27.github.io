@@ -228,22 +228,32 @@ html ::-webkit-scrollbar-track {
 /* fim do efeito de zoom ao passar o mouse sobre as imagens do portfólio */
 
 
-/* aplicando o efeito de zoom e brilho nos banners dos animes ao passar o mouse e clicar*/
-/* brilho baixo nas imagens */
+/* aplicando o efeito de zoom e brilho nos cards dos animes ao passar o mouse e clicar*/
+/* Efeitos de transição */
 #animeList img {
-    max-height: 14rem; /* Tamanho dos banners da lista de animes */
-    transition: filter ease .4s; /* aplica efeitos de transição*/
-    filter: brightness(0.6);
+    transition: 
+        box-shadow ease .3s,
+        filter ease .5s,
+        transform ease .3s; /* aplica efeitos de transição*/
+    max-height: 14rem; /* Tamanho dos cards da lista de animes em mobile */
 }
-/*Efeito de zoom e brilho*/
+
+/* solução para manter as imagens restantes com brilho baixo ao passar o mouse em uma imagem */
+#animeList:hover a img,
+#animeList:focus-within a img {
+    filter: brightness(0.4);
+}
+
+/*Efeito de zoom e brilho somente na imagem clicada */
 #animeList a:hover img,
 #animeList a:focus img {
-    /* transform: scale(1.04); */
+    transform: scale(1.02);
     filter: brightness(1.0);
-    border: solid .2rem;
-    border-image: linear-gradient(120deg, transparent, #d4bbfe, transparent) 1;
+    /* border: solid .2rem; */
+    /* border-image: linear-gradient(120deg, transparent, #d4bbfe, transparent) 1; */
+    box-shadow: 0 0 0 3px #d4bbfe; /* ou até usar rgba para mais suavidade */
 }
-/* fim da aplicação de zoom e brilho nos banners*/
+/* fim da aplicação de zoom e brilho nos cards*/
 
 
 /* efeito visual (ou magia) para esconder e revelar os vídeos sobre as imagens grandes dos animes */
@@ -297,7 +307,7 @@ html ::-webkit-scrollbar-track {
         line-height: 1.5;
     }
 
-    /*Reajuste do tamanho dos banners da lista de animes no modo desktop */
+    /*Reajuste do tamanho dos cards da lista de animes no modo desktop */
     #animeList img {
         width: 100%;
         max-height: 22.5rem;
