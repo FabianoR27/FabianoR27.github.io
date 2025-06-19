@@ -13,7 +13,7 @@
 
 /* Tamanho da logo */
 .logo {
-    width: 2.5rem;
+    width: 2rem;
 }
 
 /* Tamanho da assinatura */
@@ -47,11 +47,16 @@
     transition: transform ease .3s;
 }
 
+/* margem do topo da navbar ao rolar a página para uma seção */
+section {
+    scroll-margin-top: 50px;
+}
+
 /* hover para os links da navbar */
-.nav-link:hover {
-    color: #d4bbfe;
-    filter: drop-shadow(0 .5rem 2rem #d4bbfe);
-    text-shadow: 0 .5rem 2rem #d4bbfe83;
+.nav-link:hover, .nav-link:focus, .link-active {
+    color: #75fa9f;
+    filter: drop-shadow(0 .5rem 2rem #75fa9f);
+    text-shadow: 0 .5rem 2rem #75fa9f83;
     transform: scale(1.08);
 }
 /* fim do hover para os links da navbar */

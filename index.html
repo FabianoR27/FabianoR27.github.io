@@ -23,26 +23,34 @@
 
 <body class="text-light bg-blackblue">
     <!-- Header -->
-    <header class="py-3 bg-blackblue user-select-none transition-effect" id="navbar">
+    <header class="py-2 bg-blackblue user-select-none transition-effect sticky-top" id="navbar">
         <div class="container d-flex p-md-0 m-auto justify-content-between align-items-start align-items-lg-center">
-            <div class=" text-start d-flex align-items-center my-md-auto gap-3">
-                <a href="index.html"><img src="assets/images/logos/mylogowhite.png" alt="Fabiano Ramos Logo" class="logo"></a>
+            <div class=" text-start d-flex align-items-center mt-2 my-md-auto gap-3">
+                <a href="index.html"><img src="assets/images/logos/mylogowhite.webp" alt="Fabiano Ramos Logo" class="logo"></a>
 
                 <div class="d-none d-lg-block">
-                    <span class="fs-3 text-light">Fabiano Ramos</span>
+                    <span class="fs-4 text-light">Fabiano Ramos</span>
                 </div>
             </div>
 
             <nav class="navbar navbar-expand-md d-flex flex-column text-end justify-content-end align-items-end p-md-0 my-auto">
-                <button id="submenu-btn" class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="submenu-btn" class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list h1 text-light"></i>
                 </button>
 
                 <div class="d-flex justify-content-between fs-5">
-                    <ul class="collapse navbar-collapse gap-5 fs-4 list-unstyled my-auto" id="navbarSupportedContent">
-                        <li class="nav-item"><a href="#top" class="nav-link transition-effect">Início</a></li>
+                    <ul class="collapse navbar-collapse gap-4 list-unstyled my-auto" id="menuPrincipal">
+                        <li class="nav-item"><a href="#top" class="nav-link transition-effect link-active">Início</a></li>
                         <li class="nav-item"><a href="#portfolio" class="nav-link transition-effect">Projetos</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link transition-effect">Sobre mim</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle transition-effect" role="button" data-bs-toggle="dropdown" data-bs-target="#submenu" aria-controls="submenu">Sobre mim</a>
+                            <ul class="dropdown-menu bg-blackblue" id="submenu">
+                                <li><a href="#about" class="dropdown-item text-mint small">Quem sou eu</a></li>
+                                <li><a href="#playlist" class="dropdown-item text-mint small">Músicas Favoritas</a></li>
+                                <li><a href="#animes" class="dropdown-item text-mint small">Animes Favoritos</a></li>
+                                <li><a href="#series" class="dropdown-item text-mint small">Séries Favoritas</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a href="#contacts" class="nav-link transition-effect">Contato</a></li>
                     </ul>
                 </div>
@@ -79,7 +87,7 @@
 
                         <!-- Projeto 1 -->
                         <div class=" p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column">
-                            <a href="https://projeto-integrador-01.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/fateconHighlights.png" class="img-fluid border-mint transition-effect" alt="Página inicial do Primeiro projeto" loading="lazy"></a>
+                            <a href="https://projeto-integrador-01.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/fateconHighlights.webp" class="img-fluid border-mint transition-effect" alt="Página inicial do Primeiro projeto" loading="lazy"></a>
                             <h3 class="h2 py-4 fw-semibold text-mint">Projeto integrador 1 - Fatecon Highlights</h3>
                             <p class="lead">Este é o projeto integrador do meu primeiro semestre da faculdade. Em grupo, desenvolvemos uma página web em HTML5 semântico, com diferentes layouts para cada seção, abordando o evento geek da faculdade: a FATECon HQs. Esta versão foi atualizada após a entrega, refletindo minha visão pessoal do projeto.</p>
 
@@ -88,16 +96,16 @@
                         
                         <!-- Projeto 2 -->
                         <div class="p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column">
-                            <a href="https://portal-fatecon.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/portalFatecon.png" class="img-fluid border-mint transition-effect" alt="Página inicial do Segundo projeto" loading="lazy"></a>
+                            <a href="https://portal-fatecon.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/portalFatecon.webp" class="img-fluid border-mint transition-effect" alt="Página inicial do Segundo projeto" loading="lazy"></a>
                             <h3 class="h2 py-4 fw-semibold text-mint">Projeto integrador 2 - Portal Fatecon</h3>
-                            <p class="lead">Este é meu segundo projeto, desenvolvido em grupo e entregue no segundo semestre da faculdade. Criamos um portal de entretenimento geek inspirado no evento FATECon HQs, totalmente responsivo para qualquer tipo de tela. Esta versão, recriada em HTML e JavaScript, reflete minha visão pessoal do projeto. A versão original, desenvolvida em PHP, está disponível no meu GitHub — você pode conferir clicando <a href="https://github.com/FabianoR27/phpclass/tree/main/projetoIntegradorPHP" target="_blank" title="Códigos do projeto original aqui" class="text-mint fw-semibold">aqui</a>.</p>
+                            <p class="lead">Este é meu segundo projeto, desenvolvido em grupo e entregue no segundo semestre da faculdade. Criamos um portal de entretenimento geek inspirado no evento FATECon HQs, totalmente responsivo para qualquer tipo de tela. Esta versão, recriada em HTML e JavaScript, reflete minha visão pessoal do projeto. A versão original, desenvolvida em PHP, está disponível no meu GitHub, que você pode conferir <a href="https://github.com/FabianoR27/phpclass/tree/main/projetoIntegradorPHP" target="_blank" title="Códigos do projeto original aqui" class="text-mint fw-semibold">neste repositório aqui</a>.</p>
 
                             <a href="https://github.com/FabianoR27/ProjetoIntegrador/tree/main/projetoIntegrador02" target="_blank" class="text-mint mt-auto"><small>Repositório deste projeto <i class="bi bi-box-arrow-up-right"></i></small></a>
                         </div>
                         
                         <!-- Projeto 3 -->
                         <div class=" p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column">
-                            <a href="https://clone-spotify-home-page.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/cloneSpotify.png" class="img-fluid border-mint transition-effect" alt="Página inicial da landing page" loading="lazy"></a>
+                            <a href="https://clone-spotify-home-page.vercel.app/" target="_blank" title="Clique aqui para acessar a página"><img src="assets/images/projects/cloneSpotify.webp" class="img-fluid border-mint transition-effect" alt="Página inicial da landing page" loading="lazy"></a>
                             <h3 class="h2 py-4 fw-semibold text-mint">Clone da Página Inicial do Spotify</h3>
                             <p class="lead">Projeto desenvolvido com HTML, CSS e JavaScript que recria fielmente a interface da página inicial do Spotify. A réplica destaca técnicas de design responsivo e interatividade, proporcionando uma experiência visual moderna e intuitiva. Ideal para portfólio, o projeto evidencia atenção aos detalhes e boas práticas de desenvolvimento front-end, servindo como exemplo prático da aplicação de conceitos avançados em projetos web.</p>
 
@@ -108,7 +116,7 @@
                     <p class="fw-light text-light pt-3">*Novos projetos serão adicionados em breve.</p>
                 </div>
 
-                <p class="h2 lh-base fw-light text-light pt-md-5">Quer ver o lado técnico dos meus projetos de perto? Explore meus repositórios no GitHub, onde compartilho códigos, materiais e outros trabalhos desenvolvidos ao longo dos meus estudos. <a href="https://github.com/FabianoR27/" target="_blank" title="clique aqui para ir ao meu perfil" class="fw-semibold text-mint">Acesse <i class="bi bi-box-arrow-up-right"></i></a></p>
+                <p class="h2 lh-base fw-light text-light pt-md-5">Quer ver o lado técnico dos meus projetos de perto? Explore meus repositórios no GitHub, onde compartilho códigos, materiais e outros trabalhos desenvolvidos ao longo dos meus estudos. <a href="https://github.com/FabianoR27/" target="_blank" title="clique aqui para ir ao meu perfil" class="fw-semibold text-mint text-decoration-none">Acesse <i class="bi bi-box-arrow-up-right"></i></a></p>
             </div>
         </section>
 
@@ -122,7 +130,7 @@
 
                 <div class="mt-5 d-flex flex-column flex-lg-row justify-content-between gap-5">
                     <div class="w-100">
-                        <img src="assets/images/certificados/certificado-imersao-frontend-alura.png" alt="Certificado de participação emitido pela Alura para Fabiano Ramos Ferreira de Jesus, confirmando a conclusão da Imersão Front-End 2ª Edição com carga horária estimada de 5 horas. O certificado foi finalizado em 10 de fevereiro de 2025 e contém assinaturas de Guilherme Silveira (fundador) e Paulo Silveira (CEO). O design do certificado tem um fundo azul escuro com detalhes em azul claro, além do logotipo da Alura no canto inferior esquerdo." loading="lazy" class="img-fluid border-mint">
+                        <img src="assets/images/certificados/certificado-imersao-frontend-alura.webp" alt="Certificado de participação emitido pela Alura para Fabiano Ramos Ferreira de Jesus, confirmando a conclusão da Imersão Front-End 2ª Edição com carga horária estimada de 5 horas. O certificado foi finalizado em 10 de fevereiro de 2025 e contém assinaturas de Guilherme Silveira (fundador) e Paulo Silveira (CEO). O design do certificado tem um fundo azul escuro com detalhes em azul claro, além do logotipo da Alura no canto inferior esquerdo." loading="lazy" class="img-fluid border-mint">
                     </div>
 
                     <div class="d-flex flex-column gap-3 w-100">
@@ -172,19 +180,19 @@
                     
                     <div class="d-flex flex-column flex-md-row flex-lg-column flex-xl-row justify-content-center justify-lg-between gap-3 gap-xl-4 w-100">
                         <div class="d-flex flex-column gap-3 gap-xl-4 user-select-none">
-                            <iframe src="https://open.spotify.com/embed/track/3H1LCvO3fVsK2HPguhbml0?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Forever -->
-                            <iframe src="https://open.spotify.com/embed/track/65r94rVdiMwqXyQFEr3tqT?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Resonance -->
-                            <iframe src="https://open.spotify.com/embed/track/6C6315RjrDrqj1oqaJVGY8?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Senhor do Tempo -->
-                            <iframe src="https://open.spotify.com/embed/track/5JHNg1hxZFT7TDEphhM4wj?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Waiting For The End -->
-                            <iframe src="https://open.spotify.com/embed/track/7eMOsXtfSfBy07lYnIpndL?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Guerra -->
+                            <iframe src="https://open.spotify.com/embed/track/3H1LCvO3fVsK2HPguhbml0?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Chris Brown - Forever"></iframe><!-- Forever -->
+                            <iframe src="https://open.spotify.com/embed/track/65r94rVdiMwqXyQFEr3tqT?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Home - Resonance"></iframe><!-- Resonance -->
+                            <iframe src="https://open.spotify.com/embed/track/6C6315RjrDrqj1oqaJVGY8?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Charlie Brown Jr - Senhor Do Tempo"></iframe><!-- Senhor do Tempo -->
+                            <iframe src="https://open.spotify.com/embed/track/5JHNg1hxZFT7TDEphhM4wj?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Linkin Park - Waiting For The End"></iframe><!-- Waiting For The End -->
+                            <iframe src="https://open.spotify.com/embed/track/7eMOsXtfSfBy07lYnIpndL?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Haikaiss - Guerra"></iframe><!-- Guerra -->
                         </div>
 
                         <div class="d-flex flex-column gap-3 gap-xl-4 user-select-none">
-                            <iframe src="https://open.spotify.com/embed/track/3bMsT2EiXYKSUjc9uvIkI3?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Wake Me Up - Avicii By Avicii -->
-                            <iframe src="https://open.spotify.com/embed/track/1DkcGN0ZgWzq9NxD7yFpcE?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Spectrum -->
-                            <iframe src="https://open.spotify.com/embed/track/7gixHmutc4RH2Ixqjn7XDT?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Thinking About You (EDX Remix) -->
-                            <iframe src="https://open.spotify.com/embed/track/39BkJtg9J6gy6IybhX6ClV?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Fora Do Comum -->
-                            <iframe src="https://open.spotify.com/embed/track/2QjOHCTQ1Jl3zawyYOpxh6?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><!-- Sweater Weather -->
+                            <iframe src="https://open.spotify.com/embed/track/3bMsT2EiXYKSUjc9uvIkI3?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Avicii - Wake Me Up (Avicii By Avicii)"></iframe><!-- Wake Me Up - Avicii By Avicii -->
+                            <iframe src="https://open.spotify.com/embed/track/1DkcGN0ZgWzq9NxD7yFpcE?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Zedd - Spectrum (Extended Mix)"></iframe><!-- Spectrum -->
+                            <iframe src="https://open.spotify.com/embed/track/7gixHmutc4RH2Ixqjn7XDT?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Calvin Harris - Thinking About You (EDX Remix)"></iframe><!-- Thinking About You (EDX Remix) -->
+                            <iframe src="https://open.spotify.com/embed/track/39BkJtg9J6gy6IybhX6ClV?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Gusttavo Lima - Fora Do Comum (Ao Vivo)"></iframe><!-- Fora Do Comum -->
+                            <iframe src="https://open.spotify.com/embed/track/2QjOHCTQ1Jl3zawyYOpxh6?utm_source=generator" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="The Neighbourhood - Sweater Wheater"></iframe><!-- Sweater Weather -->
                         </div>
                     </div>
                 </div>
@@ -516,7 +524,7 @@
     <!-- Footer -->
     <footer class="bg-darkblue">
         <div class="container text-center py-3 border-top-lilac user-select-none">
-            <img src="assets/images/logos/mysignwhite.png" alt="Fabiano Ramos Signature" class="img-fluid signature">
+            <img src="assets/images/logos/mysignwhite.webp" alt="Fabiano Ramos Signature" class="img-fluid signature" loading="lazy">
             <p class="m-0 text-light fw-light">&copy; <span id="year"></span> Developed by <a href="https://instagram.com/fabiano.r_/" target="_blank" class="text-lilac">Fabiano Ramos.</a> All Rights Reserved.</p>
         </div>
     </footer>
