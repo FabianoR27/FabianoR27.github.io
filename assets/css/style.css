@@ -266,7 +266,8 @@ html ::-webkit-scrollbar-track {
     transition: filter ease .3s .5s;
     filter: opacity(0); /* para esconder o vídeo*/
 }
-.anime-video:hover iframe{
+.anime-video:hover iframe,
+.anime-video:focus iframe {
     filter: opacity(1.0); /* para revelar o vídeo*/
 }
 /* fim do efeito visual para esconder e revelar os vídeos */
