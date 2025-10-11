@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="text-light bg-blackblue">
@@ -58,11 +59,11 @@
         </div>
     </header>
 
-    <main id="main">
+    <main id="main" class="overflow-hidden">
         <!-- Hero -->
-        <section class="py-5 bg-blackblue bg-hero" id="hero">
+        <section class="py-5 bg-blackblue bg-hero" id="hero" data-aos="fade-left" data-aos-duration="1000">
             <div class="container my-0 my-md-5 p-md-0">
-                <header class="d-flex flex-column align-items-center align-items-md-start gap-3">
+                <header class="d-flex flex-column align-items-center align-items-md-start gap-3" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                     <h1 class="h-hero text-uppercase fw-bold text-lilac col-lg-9">Sejam Bem-vindos à página oficial de Fabiano Ramos.</h1>
                     <p class="h1 lh-base fw-light text-light">Aqui você vai conhecer meus trabalhos, projetos e um pouco do que me inspira — tanto no lado profissional quanto pessoal. Explore a página e descubra mais sobre mim.</p>
                 </header>
@@ -75,7 +76,7 @@
         </section>
 
         <!-- Projetos -->
-        <section class="py-5 bg-blackblue" id="portfolio">
+        <section class="py-5 bg-blackblue" id="portfolio" data-aos="fade-up" data-aos-delay="400">
             <div class="container my-0 my-md-5 p-md-0">
                 <header>
                     <h2 class="h-hero text-center text-mint fw-bold text-uppercase">Meus Projetos</h2>
@@ -86,7 +87,7 @@
                     <div class="d-flex flex-column flex-lg-row justify-content-between gap-5 gap-lg-3 gap-xl-5">
 
                         <!-- Projeto 1 -->
-                        <div class=" p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column">
+                        <div class=" p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
                             <a href="https://projeto-integrador-01.vercel.app/" target="_blank" rel="noopener noreferrer" title="Clique aqui para acessar a página"><img src="assets/images/projects/fateconHighlights.webp" class="img-fluid border-mint transition-effect" alt="Página inicial do Primeiro projeto" loading="lazy"></a>
                             <h3 class="h2 py-4 fw-semibold text-mint">Projeto integrador 1 - Fatecon Highlights</h3>
                             <p class="lead">Este é o projeto integrador do meu primeiro semestre da faculdade. Em grupo, desenvolvemos uma página web em HTML5 semântico, com diferentes layouts para cada seção, abordando o evento geek da faculdade: a FATECon HQs. Esta versão foi atualizada após a entrega, refletindo minha visão pessoal do projeto.</p>
@@ -95,7 +96,7 @@
                         </div>
 
                         <!-- Projeto 2 -->
-                        <div class=" p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column">
+                        <div class=" p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column" data-aos="fade-up" data-aos-delay="500">
                             <a href="https://clone-spotify-home-page.vercel.app/" target="_blank"
                                 rel="noopener noreferrer" title="Clique aqui para acessar a página"><img
                                     src="assets/images/projects/cloneSpotify.webp"
@@ -115,7 +116,7 @@
                         </div>
 
                         <!-- Projeto 3 -->
-                        <div class="p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column">
+                        <div class="p-3 p-md-4 w-100 border-gradient-mint bg-blackblue d-flex flex-column" data-aos="fade-up" data-aos-delay="800">
                             <a href="https://portalfatecon.infinityfree.me/" target="_blank" rel="noopener noreferrer"
                                 title="Clique aqui para acessar a página"><img
                                     src="assets/images/projects/portal-home.webp"
@@ -142,16 +143,16 @@
         </section>
 
         <!-- Certificados -->
-        <section class="py-5 bg-blackblue" id="certificado">
+        <section class="py-5 bg-blackblue" id="certificado" data-aos="fade-up" data-aos-delay="200">
             <div class="container my-0 my-md-5 p-md-0">
                 <header>
                     <h2 class="h-hero text-center text-mint fw-bold text-uppercase">Certificados</h2>
                     <p class="h2 lh-base fw-light text-center text-light">Aqui vou exibir meus certificados.</p>
                 </header>
 
-                <div class="mt-5 d-flex flex-column flex-lg-row justify-content-between gap-5">
-                    <div class="w-100">
-                        <img src="assets/images/certificados/certificado-imersao-frontend-alura.webp" alt="Certificado de participação emitido pela Alura para Fabiano Ramos Ferreira de Jesus, confirmando a conclusão da Imersão Front-End 2ª Edição com carga horária estimada de 5 horas. O certificado foi finalizado em 10 de fevereiro de 2025 e contém assinaturas de Guilherme Silveira (fundador) e Paulo Silveira (CEO). O design do certificado tem um fundo azul escuro com detalhes em azul claro, além do logotipo da Alura no canto inferior esquerdo." loading="lazy" class="img-fluid border-mint">
+                <div class="mt-5 d-flex flex-column flex-lg-row justify-content-between gap-5" data-aos="fade-left">
+                    <div class="w-100" data-aos="fade-right" data-aos-delay="200">
+                        <img src="assets/images/certificados/certificado-imersao-frontend-alura.webp" alt="Certificado de participação emitido pela Alura para Fabiano Ramos Ferreira de Jesus, confirmando a conclusão da Imersão Front-End 2ª Edição com carga horária estimada de 5 horas. O certificado foi finalizado em 10 de fevereiro de 2025 e contém assinaturas de Guilherme Silveira (fundador) e Paulo Silveira (CEO). O design do certificado tem um fundo azul escuro com detalhes em azul claro, além do logotipo da Alura no canto inferior esquerdo." loading="lazy" class="img-fluid border-mint" >
                     </div>
 
                     <div class="d-flex flex-column gap-3 w-100">
@@ -171,9 +172,9 @@
         </section>
 
         <!-- Sobre mim -->
-        <section class="py-5 bg-blackblue bg-about" id="about">
+        <section class="py-5 bg-blackblue bg-about" id="about" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
             <div class="container my-0 my-md-5 p-md-0">
-                <div class="d-flex flex-column text-lg-end align-items-lg-end gap-3">
+                <div class="d-flex flex-column text-lg-end align-items-lg-end gap-3" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
                     <header class=" col-lg-9">
                         <h2 class="h-hero text-uppercase fw-bold text-lilac">Conheça agora um pouco sobre mim.</h2>
                     </header>
@@ -194,7 +195,7 @@
         <section class="py-5 bg-blackblue" id="playlist">
             <div class="container my-0 my-md-5 p-md-0">
                 <div class="d-flex flex-column flex-lg-row justify-content-between gap-2">
-                    <header class="d-flex flex-column align-items-center align-items-md-start gap-3 w-100">
+                    <header class="d-flex flex-column align-items-center align-items-md-start gap-3 w-100" data-aos="fade-right" data-aos-delay="200">
                         <h2 class="h-hero text-uppercase fw-bold text-mint">Minhas músicas favoritas</h2>
                         <p class="fs-2 lh-base fw-light">Sou apaixonado por música e meu gosto é bem eclético, passando por vários estilos. Com mais de 600 faixas na playlist, escolher apenas algumas favoritas nunca é fácil.</p>
 
@@ -204,61 +205,61 @@
                     </header>
 
                     <div class="row row-cols-sm-2 row-cols-lg-1 row-cols-xl-2 justify-content-center g-0 w-100">
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="400">
                             <iframe
                                 src="https://open.spotify.com/embed/track/7zwn1eykZtZ5LODrf7c0tS?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
-                                title="Th Neighbourhood - You Get Me So High"></iframe><!-- You Get Me So High -->
+                                title="The Neighbourhood - You Get Me So High"></iframe><!-- You Get Me So High -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="450">
                             <iframe
                                 src="https://open.spotify.com/embed/track/42FQ6SWMnzb6QAVEuTBTiO?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="mikeeysmind - Resonance X Genesis X Not allowed - slowed"></iframe><!-- Resonance X Genesis X Not allowed - slowed -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="500">
                             <iframe
                                 src="https://open.spotify.com/embed/track/6C6315RjrDrqj1oqaJVGY8?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="Charlie Brown Jr - Senhor Do Tempo"></iframe><!-- Senhor do Tempo -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="550">
                             <iframe
                                 src="https://open.spotify.com/embed/track/5JHNg1hxZFT7TDEphhM4wj?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="Linkin Park - Waiting For The End"></iframe><!-- Waiting For The End -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="600">
                             <iframe
                                 src="https://open.spotify.com/embed/track/1oVrNSqi3Xnh4IMEE8Uvgv?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="Axwell /\ Ingrosso - Renegade"></iframe><!-- Renegade -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="650">
                             <iframe
                                 src="https://open.spotify.com/embed/track/7MPQNyAX02uIEQCRsC4sgc?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="Matuê, Predella - Banco"></iframe><!-- Banco -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="700">
                             <iframe
                                 src="https://open.spotify.com/embed/track/1DkcGN0ZgWzq9NxD7yFpcE?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="Zedd - Spectrum (Extended Mix)"></iframe><!-- Spectrum -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="750">
                             <iframe
                                 src="https://open.spotify.com/embed/track/7gixHmutc4RH2Ixqjn7XDT?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="Calvin Harris - Thinking About You (EDX Remix)"></iframe><!-- Thinking About You (EDX Remix) -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="800">
                             <iframe
                                 src="https://open.spotify.com/embed/track/1WbhIxkn5ECsOwUm795iX1?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                                 title="Lil Peep - Star Shopping"></iframe><!-- Star Shopping -->
                         </div>
-                        <div class="p-2 pb-1">
+                        <div class="p-2 pb-1" data-aos="zoom-out-up" data-aos-delay="850">
                             <iframe
                                 src="https://open.spotify.com/embed/track/2QjOHCTQ1Jl3zawyYOpxh6?utm_source=generator"
                                 allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
@@ -271,7 +272,7 @@
 
         <!-- Animes Favoritos -->
         <section class="py-5 bg-gradient-blue" id="animes">
-            <div class="container my-0 my-md-5 p-md-0">
+            <div class="container my-0 my-md-5 p-md-0" data-aos="fade-up" data-aos-delay="400">
                 <header class="d-flex flex-column align-items-center align-items-md-start gap-3">
                     <h2 class="h-hero text-md-start text-lilac fw-bold text-uppercase">Meus animes favoritos</h2>
                     <p class="fs-3 lh-base fw-light text-light">Esses são os animes que mais gosto, porque conseguiram me emocionar, arrancar boas risadas e ainda trazer lições valiosas.</p>
@@ -289,7 +290,7 @@
 
                     <ul class="d-flex list-unstyled gap-2 overflow-x-scroll justify-content-between m-0 p-2 text-uppercase" id="imageContainer">
                         <!-- Anime 1 -->
-                        <li class="mt-1">
+                        <li class="mt-1" data-aos="fade-up" data-aos-delay="600">
                             <a href="templates/anime-onePiece.html" class="load-content text-light text-decoration-none">
                                 <img title="Clique e veja logo abaixo" src="assets/images/animes/anime_one_piece_sm.webp" alt="Banner do anime 'One Piece'" loading="lazy">
                                 <p class="h4 text-start pt-3 m-0 fw-semibold text-lilac" lang="en-us">One Piece</p>
@@ -297,7 +298,7 @@
                         </li>
 
                         <!-- Anime 2 -->
-                        <li class="mt-1">
+                        <li class="mt-1" data-aos="fade-up" data-aos-delay="650">
                             <a title="Clique e veja logo abaixo" href="templates/anime-naruto.html" class="load-content text-light text-decoration-none">
                                 <img src="assets/images/animes/anime_naruto_sm.webp" alt="Banner do anime 'Naruto Shippuden'" loading="lazy">
                                 <p class="h4 text-start pt-3 m-0 fw-semibold text-lilac">Naruto Shippuden</p>
@@ -305,7 +306,7 @@
                         </li>
 
                         <!-- Anime 3 -->
-                        <li class="mt-1">
+                        <li class="mt-1" data-aos="fade-up" data-aos-delay="700">
                             <a title="Clique e veja logo abaixo" href="templates/anime-attackOnTitan.html" class="load-content text-light text-decoration-none">
                                 <img src="assets/images/animes/anime_attack_on_titan_sm.webp" alt="Banner do anime 'Attack On Titan'" loading="lazy">
                                 <p class="h4 text-start pt-3 m-0 fw-semibold text-lilac" lang="en-us">Attack On Titan</p>
@@ -313,7 +314,7 @@
                         </li>
 
                         <!-- Anime 4 -->
-                        <li class="mt-1">
+                        <li class="mt-1" data-aos="fade-up" data-aos-delay="750">
                             <a title="Clique e veja logo abaixo" href="templates/anime-deathNote.html" class="load-content text-light text-decoration-none">
                                 <img src="assets/images/animes/anime_death_note_sm.webp" alt="Banner do anime 'Death Note'" loading="lazy">
                                 <p class="h4 text-start pt-3 m-0 fw-semibold text-lilac" lang="en-us">Death Note</p>
@@ -321,7 +322,7 @@
                         </li>
 
                         <!-- Anime 5 -->
-                        <li class="mt-1">
+                        <li class="mt-1" data-aos="fade-up" data-aos-delay="800">
                             <a title="Clique e veja logo abaixo" href="templates/anime-cowboyBebop.html" class="load-content text-light text-decoration-none">
                                 <img src="assets/images/animes/anime_cowboy_bebop_sm.webp" alt="Banner do anime 'Cowboy Bebop'" loading="lazy">
                                 <p class="h4 text-start pt-3 m-0 fw-semibold text-lilac" lang="en-us">Cowboy Bebop</p>
@@ -337,7 +338,7 @@
 
         <!-- Séries Favoritas -->
         <section class="py-5 bg-darkblue" id="series">
-            <div class="container my-0 my-md-5 p-md-0">
+            <div class="container my-0 my-md-5 p-md-0" data-aos="fade-up" data-aos-delay="400">
                 <header class="d-flex flex-column align-items-center align-items-md-start gap-3">
                     <h2 class="h-hero text-md-start text-mint fw-bold text-uppercase">Minhas Séries Favoritas</h2>
                     <p class="fs-3 lh-base fw-light text-light">Essas séries estão entre as minhas favoritas, pois, assim como os animes, me marcaram, deixaram grandes lições e alegraram meus dias.</p>
@@ -345,7 +346,7 @@
 
                 <div class="accordion accordion-flush" id="accordionFlushSeries">
                     <!-- Série 1 -->
-                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac">
+                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac" data-aos="fade-right" data-aos-delay="600">
                         <p class="accordion-header">
                             <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                 SUPERNATURAL
@@ -379,7 +380,7 @@
                     </div>
 
                     <!-- Série 2 -->
-                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac">
+                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac" data-aos="fade-right" data-aos-delay="650">
                         <p class="accordion-header">
                             <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 THE BOYS
@@ -413,7 +414,7 @@
                     </div>
 
                     <!-- Série 3 -->
-                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac">
+                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac" data-aos="fade-right" data-aos-delay="700">
                         <p class="accordion-header">
                             <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                 COBRA KAI
@@ -447,7 +448,7 @@
                     </div>
 
                     <!-- Série 4 -->
-                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac">
+                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac" data-aos="fade-right" data-aos-delay="750">
                         <p class="accordion-header">
                             <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                 THE WITCHER
@@ -516,7 +517,7 @@
                     </div> -->
 
                     <!-- Série 6 -->
-                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac">
+                    <div class="accordion-item text-light bg-blackblue border-bottom-lilac" data-aos="fade-right" data-aos-delay="800">
                         <p class="accordion-header">
                             <button class="accordion-button fw-semibold collapsed fs-3 bg-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                 <span class="text-truncate">COMO VENDER DROGAS ONLINE (RÁPIDO)</span>
@@ -554,7 +555,7 @@
 
         <!-- Meus contatos -->
         <section class="py-5 bg-darkblue" id="contacts">
-            <div class="container my-0 my-md-5 p-md-0">
+            <div class="container my-0 my-md-5 p-md-0" data-aos="fade-up" data-aos-delay="400">
                 <header>
                     <h2 class="h-hero text-center text-lilac fw-bold text-uppercase">Contato</h2>
                     <p class="h2 lh-base fw-light text-light py-md-5">Se chegou até aqui, parabéns! Sobreviveu ao meu monólogo e, quem sabe, até gostou. Minhas redes sociais estão logo abaixo, então aproveita: diga um "oi", deixe uma mensagem carinhosa (ou pelo menos educada), me chame para bater um papo, me contrate para aquele projeto incrível ou, melhor ainda, me convide para um bom churrasco com uns drinks caprichados — eu levo o gelo e as piadas ruins.</p>
@@ -595,7 +596,7 @@
     <footer class="bg-darkblue">
         <div class="container text-center py-3 border-top-lilac user-select-none">
             <img src="assets/images/logos/mysignwhite.webp" alt="Fabiano Ramos Signature" class="img-fluid signature" loading="lazy">
-            <p class="m-0 text-light fw-light">&copy; <span id="year"></span> Developed by <a href="https://github.com/FabianoR27/" target="_blank" rel="noopener noreferrer" class="text-lilac">Fabiano Ramos.</a> All Rights Reserved.</p>
+            <p class="m-0 text-light fw-light">&copy; 2025 - <span id="year"></span> Developed by <a href="https://github.com/FabianoR27/" target="_blank" rel="noopener noreferrer" class="text-lilac">Fabiano Ramos.</a> All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -604,6 +605,8 @@
 
     <!--Personal Scripts -->
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init()</script>
 </body>
 
 </html>
