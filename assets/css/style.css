@@ -6,7 +6,7 @@
     /* bordas auxiliares para facilitar o desenvolvimento */
 }
 
-/* tamanho da fonte do titulo do Hero*/
+/* tamanho da fonte do titulo do Hero */
 .h-hero {
     font-size: 3rem;
 }
@@ -21,7 +21,7 @@
     max-width: 5rem;
 }
 
-/* Tamanho dos ícones das redes sociais*/
+/* Tamanho dos ícones das redes sociais */
 .social-media {
     width: 4rem;
 }
@@ -58,10 +58,10 @@ section {
     filter: drop-shadow(0 .5rem 2rem #75fa9f);
     text-shadow: 0 .5rem 2rem #75fa9f83;
     transform: scale(1.08);
-    text-decoration: underline !important;
+    /* text-decoration: underline !important;
     text-decoration-color: #d4bbfe !important;
     text-decoration-thickness: 2px !important;
-    text-underline-offset: 5px !important;
+    text-underline-offset: 5px !important; */
 }
 /* fim do hover para os links da navbar */
 /* fim das estilizações da navbar*/
