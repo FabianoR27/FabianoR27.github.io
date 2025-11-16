@@ -76,6 +76,11 @@ section {
 .bg-gradient-blue {
     background-image: linear-gradient(to bottom, #00040d, #020e1e);
 }
+.bg-navbar {
+    background-image:linear-gradient(to bottom, #00040d, #00040db9, #00040d77, transparent); /* cor de fundo semi-transparente da navbar */
+    /* backdrop-filter: blur(10px); efeito de desfoque do fundo da navbar */
+
+}
 
 
 /* cores para texto*/
